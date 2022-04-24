@@ -3,8 +3,12 @@ package com.planit.utils;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.remote.RemoteWebDriver;
 
+import java.net.URL;
 import java.util.concurrent.TimeUnit;
 
 public class Driver {
@@ -30,7 +34,18 @@ public class Driver {
                     //driver.manage().window().maximize();
                     driver = new FirefoxDriver();
                     break;
-
+                case "remote-chrome":
+                    try {
+                        DesiredCapabilities desiredCapabilities = new DesiredCapabilities();
+                        desiredCapabilities.setBrowserName("chrome");
+                        URL gridUrl = new URL("http://44.198.162.27:4444/wd/hub");
+                        driver = new RemoteWebDriver(gridUrl,desiredCapabilities);
+                    } catch (Exception e){
+                        e.printStackTrace();
+                    }
+                    break;
+                default:
+                    throw new RuntimeException("No such a browser yet!");
             }
         }
         return driver;

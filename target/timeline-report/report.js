@@ -1,47 +1,47 @@
 $(document).ready(function() {
 CucumberHTML.timelineItems.pushArray([
   {
-    "id": "9a38a8a8-59c7-4537-b46d-5e632cbc9227",
-    "feature": "validate contact page",
-    "scenario": "enter valid data and click submit",
-    "start": 1650771236193,
-    "group": 1,
-    "content": "",
-    "tags": "@contact_page,@mandatory_fields,",
-    "end": 1650771248613,
-    "className": "passed"
-  },
-  {
-    "id": "dcda3fef-30a4-453f-804d-02666b332b83",
+    "id": "0a9496b8-f297-4ee0-9ca6-7161887f24cd",
     "feature": "validate contact page",
     "scenario": "navigate to contact  and validate error",
-    "start": 1650771196384,
+    "start": 1650787834844,
     "group": 1,
     "content": "",
     "tags": "@contact_page,",
-    "end": 1650771236175,
+    "end": 1650787849068,
     "className": "passed"
   },
   {
-    "id": "e3ac9289-5688-484a-ad8a-443decbce778",
+    "id": "840e5225-26a7-48aa-be98-8ed462cd07a2",
+    "feature": "validate contact page",
+    "scenario": "enter valid data and click submit",
+    "start": 1650787849104,
+    "group": 1,
+    "content": "",
+    "tags": "@contact_page,@mandatory_fields,",
+    "end": 1650787869194,
+    "className": "passed"
+  },
+  {
+    "id": "1286f557-e3aa-4e99-8e3d-a333c1af0a3f",
     "feature": "validate contact page",
     "scenario": "enter invalid data and verify error message",
-    "start": 1650771248634,
+    "start": 1650787869210,
     "group": 1,
     "content": "",
     "tags": "@contact_page,@invalid_data,",
-    "end": 1650771253820,
+    "end": 1650787875444,
     "className": "passed"
   },
   {
-    "id": "a172a394-d7d9-4679-875d-53b2d9dd4d29",
+    "id": "39273c45-0d5d-4996-a0da-ea04a1c8f280",
     "feature": "verify items in the cart",
     "scenario": "validate the cart",
-    "start": 1650771253846,
+    "start": 1650787875470,
     "group": 1,
     "content": "",
     "tags": "@add_cart,",
-    "end": 1650771283736,
+    "end": 1650787925660,
     "className": "passed"
   }
 ]);

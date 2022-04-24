@@ -33,6 +33,8 @@ public class ContactPage extends BasePage {
     }
 
     public void clickOnSubmitBtn(){
+        WebDriverWait wait = new WebDriverWait(Driver.getDriver(), 20);
+        wait.until(ExpectedConditions.visibilityOf(submitBtn)).isDisplayed();
         submitBtn.click();
         System.out.println("Clicking on 'Submit' button");
     }
