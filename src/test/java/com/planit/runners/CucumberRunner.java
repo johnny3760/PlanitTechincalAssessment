@@ -14,7 +14,7 @@ import org.junit.runner.RunWith;
         },
         glue = "com/planit/step_definitions",
         dryRun = false,
-        tags = "@Add_cart",
+        tags = "",
         publish = true
 )
 public class CucumberRunner {

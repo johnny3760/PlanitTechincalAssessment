@@ -1,13 +1,376 @@
 [
   {
-    "line": 1,
+    "line": 2,
     "elements": [
       {
-        "start_timestamp": "2022-04-22T03:16:31.392Z",
+        "line": 4,
+        "name": "common Step",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 4838924100,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User is in the home page",
+            "match": {
+              "location": "com.planit.step_definitions.ContactPageStepDefinitions.user_is_in_the_home_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 59942700,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user navigate to \"contact\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"contact\"",
+                  "offset": 17
+                }
+              ],
+              "location": "com.planit.step_definitions.ContactPageStepDefinitions.user_navigate_to(java.lang.String)"
+            },
+            "keyword": "When "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-04-24T03:33:16.384Z",
         "before": [
           {
             "result": {
-              "duration": 6507800,
+              "duration": 2997000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.planit.step_definitions.Hooks.setup(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 8,
+        "name": "navigate to contact  and validate error",
+        "description": "",
+        "id": "validate-contact-page;navigate-to-contact--and-validate-error",
+        "after": [
+          {
+            "result": {
+              "duration": 634696600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.planit.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 305335200,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user clicks submit",
+            "match": {
+              "location": "com.planit.step_definitions.ContactPageStepDefinitions.user_clicks_submit()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3127580800,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "validate the error messages",
+            "match": {
+              "location": "com.planit.step_definitions.ContactPageStepDefinitions.validate_the_error_messages()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 610560100,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "fill the mandatory fields",
+            "match": {
+              "location": "com.planit.step_definitions.ContactPageStepDefinitions.fill_the_mandatory_fields()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 30137788200,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "validate errors are gone",
+            "match": {
+              "location": "com.planit.step_definitions.ContactPageStepDefinitions.validate_errors_are_gone()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@contact_page"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "common Step",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 5381920600,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User is in the home page",
+            "match": {
+              "location": "com.planit.step_definitions.ContactPageStepDefinitions.user_is_in_the_home_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 54946500,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user navigate to \"contact\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"contact\"",
+                  "offset": 17
+                }
+              ],
+              "location": "com.planit.step_definitions.ContactPageStepDefinitions.user_navigate_to(java.lang.String)"
+            },
+            "keyword": "When "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-04-24T03:33:56.193Z",
+        "before": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.planit.step_definitions.Hooks.setup(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 15,
+        "name": "enter valid data and click submit",
+        "description": "",
+        "id": "validate-contact-page;enter-valid-data-and-click-submit",
+        "after": [
+          {
+            "result": {
+              "duration": 670184900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.planit.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 530103300,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "fill the mandatory fields",
+            "match": {
+              "location": "com.planit.step_definitions.ContactPageStepDefinitions.fill_the_mandatory_fields()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 65734300,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "user clicks submit",
+            "match": {
+              "location": "com.planit.step_definitions.ContactPageStepDefinitions.user_clicks_submit()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5713177500,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "user validate successful submission message",
+            "match": {
+              "location": "com.planit.step_definitions.ContactPageStepDefinitions.user_validate_successful_submission_message()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@contact_page"
+          },
+          {
+            "name": "@mandatory_fields"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "common Step",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 3920369000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User is in the home page",
+            "match": {
+              "location": "com.planit.step_definitions.ContactPageStepDefinitions.user_is_in_the_home_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 54412000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user navigate to \"contact\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"contact\"",
+                  "offset": 17
+                }
+              ],
+              "location": "com.planit.step_definitions.ContactPageStepDefinitions.user_navigate_to(java.lang.String)"
+            },
+            "keyword": "When "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-04-24T03:34:08.634Z",
+        "before": [
+          {
+            "result": {
+              "duration": 999200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.planit.step_definitions.Hooks.setup(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 21,
+        "name": "enter invalid data and verify error message",
+        "description": "",
+        "id": "validate-contact-page;enter-invalid-data-and-verify-error-message",
+        "after": [
+          {
+            "result": {
+              "duration": 643296200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.planit.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 526508300,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "Populate mandatory fields with invalid data",
+            "match": {
+              "location": "com.planit.step_definitions.ContactPageStepDefinitions.populate_mandatory_fields_with_invalid_data()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 37964100,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "validate the displayed error messages",
+            "match": {
+              "location": "com.planit.step_definitions.ContactPageStepDefinitions.validate_the_displayed_error_messages()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@contact_page"
+          },
+          {
+            "name": "@invalid_data"
+          }
+        ]
+      }
+    ],
+    "name": "validate contact page",
+    "description": "",
+    "id": "validate-contact-page",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/cantactPage.feature",
+    "tags": [
+      {
+        "name": "@contact_page",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2022-04-24T03:34:13.846Z",
+        "before": [
+          {
+            "result": {
               "status": "passed"
             },
             "match": {
@@ -22,7 +385,7 @@
         "after": [
           {
             "result": {
-              "duration": 630996700,
+              "duration": 658995800,
               "status": "passed"
             },
             "match": {
@@ -35,7 +398,7 @@
         "steps": [
           {
             "result": {
-              "duration": 4817589300,
+              "duration": 3962323000,
               "status": "passed"
             },
             "line": 5,
@@ -47,7 +410,7 @@
           },
           {
             "result": {
-              "duration": 62770100,
+              "duration": 55956700,
               "status": "passed"
             },
             "line": 6,
@@ -65,43 +428,61 @@
           },
           {
             "result": {
-              "duration": 307449700,
+              "duration": 308068100,
               "status": "passed"
             },
             "line": 7,
-            "name": "user buy Stuffed Frog 2 times",
+            "name": "user buy Stuffed Frog \u003c2\u003e times",
             "match": {
-              "location": "com.planit.step_definitions.ShopPageStepDefinitions.user_buy_stuffed_frog_times()"
+              "arguments": [
+                {
+                  "val": "2",
+                  "offset": 23
+                }
+              ],
+              "location": "com.planit.step_definitions.ShopPageStepDefinitions.userBuyStuffedFrogTimes(int)"
             },
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 203810100,
+              "duration": 190640600,
               "status": "passed"
             },
             "line": 8,
-            "name": "user buy Fluffy Bunny 5 times",
+            "name": "user buy Fluffy Bunny \u003c5\u003e times",
             "match": {
-              "location": "com.planit.step_definitions.ShopPageStepDefinitions.user_buy_fluffy_bunny_times()"
+              "arguments": [
+                {
+                  "val": "5",
+                  "offset": 23
+                }
+              ],
+              "location": "com.planit.step_definitions.ShopPageStepDefinitions.user_buy_fluffy_bunny_times(int)"
             },
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 129880400,
+              "duration": 114893200,
               "status": "passed"
             },
             "line": 9,
-            "name": "user buy Valentine Bear 3 times",
+            "name": "user buy Valentine Bear \u003c3\u003e times",
             "match": {
-              "location": "com.planit.step_definitions.ShopPageStepDefinitions.user_buy_funny_cow_times()"
+              "arguments": [
+                {
+                  "val": "3",
+                  "offset": 25
+                }
+              ],
+              "location": "com.planit.step_definitions.ShopPageStepDefinitions.user_buy_funny_cow_times(int)"
             },
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 49875600,
+              "duration": 49276500,
               "status": "passed"
             },
             "line": 10,
@@ -119,9 +500,8 @@
           },
           {
             "result": {
-              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//input[@value\u003d\"+numOfItem+\"]\"}\n  (Session info: chrome\u003d100.0.4896.127)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027NEW-PC\u0027, ip: \u0027192.168.0.17\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002714.0.2\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.127, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: C:\\Users\\new\\AppData\\Local\\...}, goog:chromeOptions: {debuggerAddress: localhost:52134}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 072997e3a29b48991723624a9cf4613e\n*** Element info: {Using\u003dxpath, value\u003d//input[@value\u003d\"+numOfItem+\"]}\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat com.planit.pages.CartPage.Quantity(CartPage.java:21)\r\n\tat com.planit.pages.CartPage.actualStuffedFrogSubTotal(CartPage.java:40)\r\n\tat com.planit.step_definitions.ShopPageStepDefinitions.user_verify_the_subtotal_for_each_product_is_correct(ShopPageStepDefinitions.java:39)\r\n\tat ✽.user verify the subtotal for each product is correct(file:///C:/Users/new/IdeaProjects/PlanitTechincalAssessment/src/test/resources/features/shop.feature:11)\r\n",
-              "duration": 15076904100,
-              "status": "failed"
+              "duration": 12195936300,
+              "status": "passed"
             },
             "line": 11,
             "name": "user verify the subtotal for each product is correct",
@@ -132,7 +512,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 52948500,
+              "status": "passed"
             },
             "line": 12,
             "name": "verify the price for each product",
@@ -143,8 +524,8 @@
           },
           {
             "result": {
-              "duration": 999200,
-              "status": "skipped"
+              "duration": 12285119700,
+              "status": "passed"
             },
             "line": 13,
             "name": "verify sub totals",
